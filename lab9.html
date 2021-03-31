@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name this web page</title>
+    <script type='text/javascript' src='lab9.js'></script>
+    <link type='text/css' rel='stylesheet' href='lab9.css'>
+</head>
+
+<body>
+    <header>
+        <h1>This page will allow us to search for employees</h1>
+    </header>
+
+    <form id="searchbox">
+        <label for="id">Search for Client ID:</label>
+        <input type="text" id="id" name="id" placeholder="input id"><br>
+        <span id='help-id' class="helper-popup hidden">Enter a numeric number </span><br>
+        <label for="name">Search for last name:</label>
+        <input type="text" id="name" name="name" placeholder="Type a name here"><br>
+        <span id='help-name' class="helper-popup hidden">Enter a name </span><br>
+        <label for="phone">Enter Phone Number:</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter Phone Number"><br>
+        <span id='help-phone' class="helper-popup hidden">Ex: 403-567-0888 </span>
+        <div id="button-area">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+
+    <div id="SearchResults"></div>
+
+    <br>
+    <br>
+    <h2>Here is the Client Information</h2>
+    <div id="employeeRecords"></div>
+</body>
+
+</html>
